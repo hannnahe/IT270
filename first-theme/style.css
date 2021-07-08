@@ -1,0 +1,128 @@
+/*styles for first wp website
+Theme Name: First Theme
+Author: Hannah Eberts
+Author URI : http://hannaheberts.com
+Description: First WP Theme for it 270
+*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:rgb(186, 212, 228);
+}
+
+ header{
+     height:200px;
+     background:rgb(110, 134, 165);
+ } 
+ 
+ #wrapper{
+ max-width:1200px;
+ margin:0 auto;
+}
+
+ main{
+     float:left;
+     width:63%;
+     margin-top:30px;
+ }
+
+ aside{
+     margin-top:30px;
+     float:right;
+     width:34%;
+     height:200px;
+     background:rgb(158, 176, 210);
+ }
+
+footer{
+    clear:both;
+    height:200px;
+    background:linen;
+}
+
+.home .size-post-thumbnail{
+    width:60%;
+    height:60%;
+}
+.thumbnail{
+    margin-bottom:10px;
+}
+
+.copyright{
+  clear:both;
+  height:50px;
+  line-height:50px; 
+  background:lightgray; 
+}
+.copyright li{
+    float:left;
+    margin-right:30px;
+}
+ .copyright ul{
+     max-width:1400px;
+     margin:0 auto;
+ }
+
+ .meta{
+    margin-bottom:10px;
+}
+ 
+ p{
+    margin-bottom:20px;
+ }
+ .block{
+     display:block;
+ }
+  
+ p + .block{
+     margin:-10px 0 20px 0;
+ }
+ 
+ article span{
+      font-style:italic;
+  }
+
+  h1{
+      font-size:2.44em;
+      color:rgb(5, 5, 120);
+      margin-bottom: 10px;
+  }
+  h1 a {
+      color:rgb(39, 39, 106);
+  }
+
+  h2{
+    font-size:1.88em;
+    color:rgb(12, 30, 52);
+    margin-bottom:10px;
+}
+  h3{
+      font-size:1.3em;
+      color:rgb(50, 89, 133);
+      margin-bottom:10px;
+  }
+/*reply form*/
+  #comment{
+      display:block;
+  }
+
+  .comment-notes + .comment-form-comment{
+      margin:-10px 0 20px 0; 
+  }
+  
+  #respond{
+      border:1px solid rgb(148, 148, 172);
+      padding:13px;
+      margin-bottom:20px;
+    width: 460px;
+  }
+
+  
+
+a{
+    color: rgb(60, 60, 99);
+}
