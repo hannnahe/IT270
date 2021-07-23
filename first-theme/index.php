@@ -1,8 +1,10 @@
 <?php 
 get_header(); 
 ?>
-
-<div id="wrapper">
+<div id="hero">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/yellowstone-inner.jpg" alt="banner">
+</div><!--end hero-->
+<div class="wrapper">
 <main>
     <!--if we have posts.. show them! if not, we do not have posts-->
 <?php if(have_posts()) : ?>
@@ -39,9 +41,7 @@ Would you like to search again with different keywords?<p>';?>
 <!--please remember, the search results originally is working off the index.php page-->
 </main>
 
-<aside>
-    This is the index page. 
-</aside>
+<?php get_sidebar();?>
 
 </div><!--endwrapper-->
 

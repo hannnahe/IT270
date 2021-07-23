@@ -1,9 +1,10 @@
 <?php
 get_header();
-
 ?>
-
-<div id="wrapper">
+<div id="search-error">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/searching.jpg" alt="searching">
+</div>
+<div class="wrapper">
 <main>
 <?php if(have_posts()) : ?>
 <h1 class="page-title">

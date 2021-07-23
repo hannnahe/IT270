@@ -1,11 +1,13 @@
 <?php 
 get_header(); 
-/*Template Name: Front Page*/
+/*Template Name: About Page*/
 ?>
 <div id="hero">
-    <img src="<?php echo get_template_directory_uri();?>/../../uploads/yellowstone-header-home.jpg" alt="banner">
+    <img src="<?php echo get_template_directory_uri();?>/../../uploads/yellowstone-inner.jpg" alt="banner">
+
 </div><!--end hero-->
 <div class="wrapper">
+    <main>
     <!--if we have posts.. show them! if not, we do not have posts-->
 <?php if(has_post_thumbnail()) : ?>
     <?php the_post_thumbnail();?>
@@ -16,10 +18,11 @@ get_header();
 <?php endwhile;?>
 
 
+</main>
 
-
-
-
+<aside id="secondary" class="widget-area">
+<?php dynamic_sidebar( 'sidebar-about' );?>
+</aside><!-- #secondary -->
 
 </div><!--endwrapper-->
 <?php get_footer(); ?>

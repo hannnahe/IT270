@@ -1,8 +1,11 @@
 <?php 
 get_header(); 
 ?>
+<div id="hero">
+    <img src="<?php echo get_template_directory_uri();?>/../../uploads/yellowstone-inner.jpg" alt="banner">
 
-<div id="wrapper">
+</div><!--end hero-->
+<div class="wrapper">
 <main>
     <!--if we have posts.. show them! if not, we do not have posts-->
 <?php if(have_posts()) : ?>
@@ -21,6 +24,10 @@ get_header();
    
 <?php echo wpautop('Sorry, no posts were found!'); ?>
 <?php endif; ?>
+<span class="next-previous">
+<?php (previous_post_link()) ? '%link' : '';?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : '';?>
+</span>
+
 <?php comments_template(); ?>
 </main>
 
