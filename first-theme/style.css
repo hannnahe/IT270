@@ -12,17 +12,9 @@ Description: First WP Theme for it 270
 
 body{
     background:rgb(186, 212, 228);
+	font-size:100%;
 }
 
- header{
-     background:rgb(160, 179, 206);
-	 height:200px;
-	 position:fixed;
-	 top:0;
-	 left:0;
-	 width:100%;
-
- } 
 
  /*search form*/
 #top{
@@ -32,7 +24,7 @@ body{
     padding:0 20px;
 }
 
-#searchform{
+#top #searchform{
     float:right;
 }
 
@@ -50,14 +42,51 @@ body{
     padding:4px;
     background:rgb(176, 193, 244);
 }
+/*main search form*/
+main #searchform{
+	float:left;
+}
+.screen-reader-text{
+    display:none;
+}
+
+main input#s{
+    height:30px;
+    font-size:14px;
+    margin-right:6px;
+}
+
 /*end search form*/
+
+/*header styles*/
+header{
+	background:rgb(160, 179, 206);
+	height:180px;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+} 
+.inner-header{
+    max-width:1200px;
+    margin:0 auto;
+   }
+ 
+#logo{
+     float:left;
+     margin:40px 0;
+	 margin-bottom:70px;
+ }
+/*end header styles*/
+
+/*hero styles*/
 
 .home #hero{
 	background-image:url(https://www.hannaheberts.com/it270/site1/wp-content/uploads/yellowstone-header-home.jpg);
 	background-attachment:fixed;
 	background-size:100%;
 	background-position:0 150px;
-	min-height:600px;
+	min-height:400px;
 	max-width:100%;
     background-repeat:no-repeat;
 }
@@ -66,7 +95,7 @@ body{
     background-attachment:fixed;
     background-size:100%;
     background-position:0 150px;
-    min-height:500px;
+    min-height:300px;
     max-width:100%;
     background-repeat:no-repeat;
 }
@@ -79,17 +108,11 @@ body{
     display:none;
 }
 
-.inner-header{
-    max-width:1200px;
-    margin:0 auto;
-   }
+/*end hero styles*/
+
+
  
-#logo{
-     float:left;
-     margin:40px 0;
-	 margin-bottom:70px;
- }
- 
+ /*navigation styles*/
  .menu-site1-primary-menu-container{
      float: right;  
      margin-top:40px;
@@ -125,15 +148,12 @@ body{
 	background:rgb(160, 179, 206);
 	color:darkslategray;
 }
+/*end navigation styles*/
 
-#search-error{
-	max-width:1200px;
-	margin:150px auto 20px auto;
-}
-
+/*main body styles*/
 .wrapper{
  max-width:1200px;
- margin:0 auto;
+ margin:20px auto;
  clear:both;
  padding-top:50px;
 }
@@ -141,62 +161,49 @@ body{
  main{
      float:left;
      width:63%;
- 
+	 margin-bottom: 30px;
  }
 
  aside{
   
      float:right;
-     width:34%;
-     /* height:450px;
-     background:rgb(158, 176, 210); */
+     width:33%;
+	 margin-bottom: 30px;
  }
- .full-width{
-	 clear:both;
-	 background:rgb(176, 195, 121);
+/*boxes within body*/
+
+#block-6{
+	margin:0 auto;
+	padding-top: 20px;
+	text-align:center; 
+	max-width:1200px;
  }
- #block-6{
-	 max-width:1200px;
+ #custom_html-4{
 	 margin:0 auto;
 	 padding:20px 0;
 	 text-align:center;
+
  }
-footer{
-    clear:both;
-background:rgb(207, 231, 247);
+ /*end boxes within body*/
+/*end main body styles*/
+
+/*button styles*/
+.button{
+	background:rgb(238, 238, 244);
+	padding:5px;
+	text-align:center;
+	border:1px solid rgb(8, 4, 33);
+	display:block;
+	width:35%;
+	margin:5px auto;
 }
 
-footer.wrapper{
-	background:rgb(207, 231, 247);
-	padding-bottom:30px;
+.button a{
+	color:rgb(8, 4, 33);
 }
+/*end button styles*/
 
-.row{
-overflow:hidden;
-margin-bottom:20px;
-}
-
-.third{
-	/* 940 px grid 
-	300 times 3 plus 2 gutters of 20px = 940*/
-	width:31.9%;
-	float:left;
-	margin-right:2.12%;
-
-}
-.third:last-of-type{
-	margin-right:0;
-}
-
-.col8{
-	width:48.93%;
-	float:left;
-}
-
-.col8:last-of-type{
-	float:right;
-}
-
+/*classes and ids styles*/
 .home .size-post-thumbnail{
     width:60%;
     height:60%;
@@ -209,12 +216,15 @@ margin-bottom:20px;
   clear:both;
   height:50px;
   line-height:50px; 
-  background:rgb(207, 231, 247);
+  background:rgb(211, 232, 246);
   margin:0 auto;
 }
 .copyright li{
     float:left;
-    margin-right:30px;
+    margin-right:40px;
+	margin-left:60px;
+	list-style-type: none;
+	
 }
  .copyright ul{
      max-width:1400px;
@@ -236,11 +246,89 @@ margin-bottom:20px;
      margin:-10px 0 20px 0;
  }
  
- article span{
-      font-style:italic;
+.search .posts{
+	  width:63%;
+	  background:rgba(223, 223, 227, 0.332);
   }
+#search-error img{
+	min-width:1400px;
+	max-height:200px;
+}
 
-  h1{
+/*end classes and ids styles*/
+
+
+/*aside/sidebar styles/containers in aside*/
+#custom_html-2{
+	background:rgb(158, 176, 210);
+	padding:5% 5% 5% 5%;
+}
+
+#nav_menu-2{
+	background:rgb(158, 176, 210);
+	margin-top:-20px;
+	padding:3% 5% 5% 5%;
+}
+.menu-our-tours-menu-container{
+	margin-left:20px;
+	margin-bottom:15px;
+}
+
+.menu-our-tours-menu-container li{
+	line-height:1.2;
+	list-style-type:none;
+}
+
+#block-9{
+	margin-top:30px;
+	border:1px solid green;
+	padding:4%;
+}
+#nav_menu-3{
+background:rgba(213, 241, 254, 0.366);	
+margin-top:30px;
+	border:1px solid green;
+	padding:4%;
+}
+
+#nav_menu-3 li{
+	list-style-type: none;
+}
+
+
+  /*styles for categories page once its working*/
+ #recent-posts-3{
+	padding:3%;	 
+}
+
+#recent-posts-3 ul{
+margin-left:3%;
+}
+
+#categories-3{
+	margin-left:3%;
+}
+
+#categories-3 ul{
+	margin-left:3%;
+}
+/*end categories styles*/
+/*end aside styles and containers*/
+
+
+/*typography styles*/
+a{
+    color: rgb(60, 60, 99);
+}
+
+.home h1{
+	font-size:2.44em;
+	color:rgb(4, 55, 42);
+	margin-bottom: 10px;
+	text-align:center;
+}
+
+h1{
       font-size:2.44em;
       color:rgb(4, 55, 42);
       margin-bottom: 10px;
@@ -288,66 +376,107 @@ margin-bottom:20px;
 	color:green;
 }
 
-/*aside/sidebar styles*/
-#block-4{
-	background:rgb(158, 176, 210);
-	padding:5% 5% 5% 5%;
+article span{
+	font-style:italic;
 }
 
-#nav_menu-2{
-	background:rgb(158, 176, 210);
-	margin-top:-20px;
-	padding:3% 5% 5% 5%;
+
+#search-error{
+	max-width:1200px;
+	margin:150px auto 20px auto;
 }
-.menu-our-tours-menu-container{
-	margin-left:20px;
+
+.category .page-title{
 	margin-bottom:15px;
 }
-
-.menu-our-tours-menu-container li{
-	line-height:1.3;
-	list-style-type:none;
-	font-weight:bold;
+.posts h1{
+	margin-bottom:5px;
 }
-
-#block-9{
-	margin-top:30px;
-	border:1px solid green;
-	padding:4%;
-}
-
-
+/*end typography styles*/
 
 
 /*reply form*/
-  #comment{
-      display:block;
-  }
-
-  .comment-notes + .comment-form-comment{
-      margin:-10px 0 20px 0; 
-  }
-  
-  #respond{
-      border:1px solid rgb(148, 148, 172);
-      padding:13px;
-      margin-bottom:20px;
-    width: 460px;
-  }
-
-  
-
-a{
-    color: rgb(60, 60, 99);
+#comment{
+	display:block;
 }
 
+.comment-notes + .comment-form-comment{
+	margin:-10px 0 20px 0; 
+}
+
+#respond{
+	border:1px solid rgb(148, 148, 172);
+	padding:13px;
+	margin-bottom:20px;
+  width: 460px;
+}
+/*end replyform*/
+
+ /*footer styles*/
+
+ footer{
+    clear:both;
+background:rgb(195, 218, 239);
+}
+
+/* footer.wrapper{
+	background:yellow;
+	padding-bottom:30px;
+} */
+
+
+/*footer contianers*/
+.full-width{
+	clear:both;
+	background:rgb(222, 240, 255);
+   
+}
+
+footer .row{
+	text-align:center;
+}
+.row{
+overflow:hidden;
+margin-bottom:20px;
+}
+
+.third{
+	/* 940 px grid 
+	300 times 3 plus 2 gutters of 20px = 940*/
+	width:31.9%;
+	float:left;
+	margin-right:2.12%;
+
+}
+.third:last-of-type{
+	margin-right:0;
+}
+
+.col8{
+	width:48.93%;
+	float:left;
+}
+
+.col8:last-of-type{
+	float:right;
+}
+.col8 img{
+height:70%;
+width:70%;
+}
+
+/*end footer styles*/
+
+
+/*!!start media queries here*/
 @media screen and (max-width:1430px){
 	
 .home #hero{
 			background-image:none;
-			margin-top:150px;
+			margin-top:150px;	
 			max-width:100%;
 			min-height:auto;
+		
 			
 		}
 .inner-page #hero {
@@ -360,28 +489,147 @@ a{
 
 .home #hero img {
 			display:block;
+			max-height:200px;
+			width:100%
 		}
 		
 .inner-page #hero img {
 			display:block;
+			max-height:200px;
+			width:100%;
 		}
 
 	}
 
 
 
+	@media screen and (max-width:1140px){
+		/* body{background:green;
+		} */
+	
+		.wrapper, .inner-header{
+			margin:20px 30px;
+		}
+	
+		.inner-header{
+			margin:0 30px;
+		}
+	}
 
-/*nav astuteo dropdown menu*/
+	
+	@media screen and (max-width:1000px){
+		body{
+			font-size:96;
+		}
+	}
+
+	@media screen and (max-width:970px){
+		body{
+			font-size:94%;
+		}
+
+		blockquote{
+			font-size:1.4em; 
+			margin:0 2% 20px 2%;
+			line-height:1.1em;
+		}
+		.home h1{
+			font-size:2.2em;
+		}
+		.big-font{
+			font-size:1.1em; 
+			margin:0 2% 20px 2%;
+		}
+
+	.third{
+			/* 940 px grid 
+			300 times 3 plus 2 gutters of 20px = 940*/
+			width:auto;
+			float:none;
+			margin-right:0%;
+		}
+		
+	}
+
+	@media screen and (max-width:800px){
+		body{font-size:80%;
+		}
+		
+		.wrapper{
+			margin:20px 15px;
+		}
+	
+		.inner-header{
+			margin:0 15px;
+		}
+	}
+
+
+	/*nav astuteo dropdown menu*/
 .nav-button { display: none; } /* hide the navigation button by default */
 
 @media only screen and (max-width: 700px) {
+	#top{
+		background:none;
+		height:auto;
+		line-height: inherit;
+		padding:0;
+		z-index: 20000;
+	}
+	
+	#top #searchform{
+		float:none;
+		position:fixed;
+		top:10px;
+		right:10px;
+	} 
+
+	header{
+		height:auto;
+		position:static;
+	} 
+
+	
+	 
+	#logo{
+		 float:none;
+		 margin:20px auto 20px auto;	
+	 }
+
+	.col8{
+		width:auto;
+		float:none;
+	}
+	
+	.col8:last-of-type{
+		float:none;
+	}
+	
+	.wrapper, .inner-header{
+		margin:20px 15px;
+	}
+
+	.inner-header{
+		margin:0 15px;
+	}
+
+	main{
+		float:none;
+		width:auto;
+	}
+   
+	aside{
+	 
+		float:none;
+		width:auto;
+	}
 
 	/* Navigation Button
 	-------------------------------------------------------- */
 
 	.nav-button {
 		display: block;
-		position: absolute;
+		position: fixed;
 		top: 7px;
 		left: 7px;
 		width: 50px;
@@ -416,15 +664,15 @@ a{
 	.primary-nav {
 		width: 100%;
 		float: none;
-		background-color: #779ab8; /* change the menu color */
+		background-color: #a7bdd0; /* change the menu color */
 		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
 		display: block;
 		height: 50px;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		box-shadow: 0 1px 2px rgba(0,0,0,.3);
-		position: absolute;
+		box-shadow: 0 1px 1px rgba(0,0,0,.3);
+		position: fixed;
 		top: 0px;
 		left: 0px;
 		z-index: 998;
@@ -447,7 +695,7 @@ a{
     }
 	.main-navigation li:hover .sub-menu li{
 	width:100%;
-	background: #779ab8;
+	background: #c7d8e6;
 	}
 
 	.primary-nav li a {

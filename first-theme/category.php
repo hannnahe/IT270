@@ -6,8 +6,19 @@ get_header();
 </div><!--end hero-->
 <div class="wrapper">
 <main>
-    <!--if we have posts.. show them! if not, we do not have posts-->
-<?php if(have_posts()) : ?>
+    <!--if we have categories.. show them! if not, we do not have categories-->
+    <h1 class="page-title">
+<?php _e( 'Category results for: ', 'site1' ); 
+$categories = get_the_category(); 
+if ( ! empty( $categories)){
+    echo esc_html( $categories[0]->name);
+    //show category name
+}
+?>
+</h1>
+
+
+
 <?php while(have_posts()) : the_post() ; ?>
 <article class="posts">
 <h1><a href="<?php the_permalink();?>"><?php the_title() ;?></a></h1>
@@ -30,19 +41,12 @@ get_header();
 </span>
 </article>
 <?php endwhile;?>
-
-<?php else : ?>
-   
-<?php echo '<h2>Search Results:</h2>
-<p>Sorry, but nothing matched your search terms. <br>
-Would you like to search again with different keywords?<p>';?>
-<?php get_search_form();?>
-<?php endif; ?>
-<!--please remember, the search results originally is working off the index.php page-->
 </main>
 
 
 <?php get_sidebar();?>
+
+
 
 </div><!--endwrapper-->
 

@@ -1,12 +1,12 @@
 <?php
 get_header();
 ?>
-<div id="search-error">
-<img src="<?php echo get_template_directory_uri();?>/../../uploads/searching.jpg" alt="searching">
-</div>
 <div class="wrapper">
-<main>
+
 <?php if(have_posts()) : ?>
+    <div id="search-error">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/Banner1202.jpg" alt="wavy">
+</div>
 <h1 class="page-title">
 <?php _e( 'Search results for: ', 'site1' ); ?>
 <span class="page-description"><?php echo get_search_query(); ?>
@@ -41,6 +41,9 @@ get_header();
 <?php endwhile; ?>
 
 <?php else : ?>
+<div id="search-error">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/searching.jpg" alt="cannot find">
+</div>
 <h1 class="page-title">
 <?php _e( 'No content for: ', 'site1' ); ?>
 <span class="page-description"><?php echo get_search_query(); ?>
@@ -51,13 +54,6 @@ Would you like to search again with different keywords?</p>
 
 <?php get_search_form(); ?>
 <?php endif; ?>
-
-
-</main>
-
-<aside>
-
-</aside>
 
 
 

@@ -31,8 +31,9 @@ get_header();
 <?php comments_template(); ?>
 </main>
 
-<aside>
-</aside>
+
+<?php get_sidebar();?>
+
 
 </div><!--endwrapper-->
 
