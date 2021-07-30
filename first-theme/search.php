@@ -51,14 +51,14 @@ get_header();
 
 <p>Sorry, but nothing matched your search terms.  <br>
 Would you like to search again with different keywords?</p>
-
+</span>
 <?php get_search_form(); ?>
 <?php endif; ?>
 
 
+<?php get_sidebar();?>
 
-</div>
-<!-- end wrapper -->
+</div><!-- end wrapper -->
 <?php
 get_footer();
 
