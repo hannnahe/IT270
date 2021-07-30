@@ -7,14 +7,14 @@ get_header();
 <div class="wrapper">
 <main>
 <h2><?php _e( 'This is somewhat embarrassing, isn’t it?', 'site' ); ?></h2>
-    <p><?php _e( 'It looks like nothing was found at this location. Maybe try another search?', 'site1' ); ?></p>
+    <h3><?php _e( 'It looks like nothing was found at this location. Maybe try another search?', 'site1' ); ?></h3>
 <?php get_search_form(); ?>
-<h3>Feel free to browse our other pages!</h3>
+<h4 class="fourohfour">Feel free to browse our other pages!</h4>
 <?php wp_list_pages();?>
 </main>
 
-<aside>
+<!-- <aside>
     This is 404 page
-</aside>
+</aside> -->
 </div><!--end wrapper-->
 <?php get_footer(); ?>

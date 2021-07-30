@@ -66,6 +66,7 @@ header{
 	top:0;
 	left:0;
 	width:100%;
+	z-index:10;
 } 
 .inner-header{
     max-width:1200px;
@@ -87,16 +88,17 @@ header{
 	background-attachment:fixed;
 	background-size:100%;
 	background-position:0 150px;
-	min-height:400px;
+	min-height:600px;
 	max-width:100%;
     background-repeat:no-repeat;
 }
+
 .inner-page #hero {
     background-image:url(https://www.hannaheberts.com/it270/site1/wp-content/uploads/yellowstone-inner.jpg);
     background-attachment:fixed;
     background-size:100%;
     background-position:0 150px;
-    min-height:300px;
+    min-height:400px;
     max-width:100%;
     background-repeat:no-repeat;
 }
@@ -145,7 +147,7 @@ header{
  }
  .main-navigation li:hover .sub-menu li{
     margin-left:0;
-	width:130px;
+	width:150px;
 	background:rgb(160, 179, 206);
 	color:darkslategray;
 }
@@ -189,6 +191,28 @@ header{
  /*end boxes within body*/
 /*end main body styles*/
 
+/*contact form page*/
+.page-contact-us .wpforms-container{
+	max-width:900px;
+	margin:0 auto;
+	}
+.page-contact-us h1{
+	text-align:center;
+	 }
+#wpforms-form-122{
+	border:1px solid rgba(69, 91, 135, 0.551);
+	padding:3%;
+	margin-top:20px;
+}	
+
+#wpforms-form-123{
+	border:1px solid rgba(69, 91, 135, 0.551);
+	padding:3%;
+	margin-top:20px;
+}	
+
+	/*end contact form*/
+
 /*button styles*/
 .button{
 	background:rgb(238, 238, 244);
@@ -206,6 +230,13 @@ header{
 /*end button styles*/
 
 /*classes and ids styles*/
+.three{
+	display:block;
+	margin:4%;
+	max-width:100%;
+	height:auto;
+   } 
+
 .home .size-post-thumbnail{
     width:60%;
     height:60%;
@@ -253,8 +284,18 @@ header{
 	  background:rgba(223, 223, 227, 0.332);
   }
 #search-error img{
-	max-height:200px;
 	display:block;
+}
+
+.fourohfour{
+	clear:both;
+}
+
+.home h2{
+	text-align:center;
+}
+.inner-page h1{
+	margin:0 auto;
 }
 
 /*end classes and ids styles*/
@@ -298,23 +339,37 @@ margin-top:30px;
 }
 
 
-  /*styles for categories page once its working*/
- #recent-posts-3{
-	padding:3%;	 
+
+/*inner pages blocks*/
+
+#categories-2{
+	margin-top:30px;
+	border:1px solid green;
+	padding:4%;
+	margin-left:3%;
+	background:rgba(213, 241, 254, 0.366);	
+}
+#recent-posts-2{
+	margin-top:30px;
+	border:1px solid green;
+	padding:4%;
+	margin-left:3%;
+	background:rgba(213, 241, 254, 0.366);	
 }
 
-#recent-posts-3 ul{
-margin-left:3%;
-}
-
-#categories-3{
+#categories-2 ul{
 	margin-left:3%;
 }
-
-#categories-3 ul{
+#recent-posts-2 ul{
 	margin-left:3%;
-}
-/*end categories styles*/
+	}
+
+#categories-2 li{
+	list-style-type: none;
+	}
+#recent-posts-2 li{
+	list-style-type: none;
+		}
 /*end aside styles and containers*/
 
 
@@ -465,6 +520,7 @@ margin-bottom:20px;
 .col8 img{
 max-width:85%;
 display:block;
+height:auto;
 
 }
 
@@ -490,15 +546,15 @@ display:block;
 
 .home #hero img {
 			display:block;
-			max-height:200px;
-			width:100%;
+			min-height:auto;
+			max-width:100%;
 			margin:0 auto;
 		}
 		
 .inner-page #hero img {
 			display:block;
-			max-height:200px;
-			width:100%;
+			min-height:auto;
+			max-width:100%;
 			margin:0 auto;
 		}
 
@@ -522,7 +578,7 @@ display:block;
 	
 	@media screen and (max-width:1000px){
 		body{
-			font-size:96;
+			font-size:96%;
 		}
 	}
 
@@ -582,7 +638,6 @@ display:block;
 
 	#search-error img{
 		margin-top:0px;
-		max-height:200px;
 		display:block;
 	}
 	
@@ -643,10 +698,7 @@ display:block;
 		width:auto;
 	}
  	
-	img.alignnone.size-medium{
-	 display:block;
-	 margin:0 auto;
-	}
+	
 
 
 
@@ -714,14 +766,22 @@ display:block;
         margin-left:0px;
     }
     .main-navigation li:hover .sub-menu{
-        position:static;
-        top:0;
-        padding:0;
-        background:none;
+		display:block;
+		position:absolute;
+		top:20px;
+		left:0;
+		padding:6px;
+   color:darkslategray;
+   border:1px solid black;
+   background:rgb(160, 179, 206);
     }
+
 	.main-navigation li:hover .sub-menu li{
-	width:100%;
-	background: #c7d8e6;
+	margin-left:0;
+	width:180px;
+	background:rgb(160, 179, 206);
+	color:darkslategray;
+	padding:0 5px;
 	}
 
 	.primary-nav li a {

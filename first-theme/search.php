@@ -2,7 +2,7 @@
 get_header();
 ?>
 <div class="wrapper">
-
+<main>
 <?php if(have_posts()) : ?>
     <div id="search-error">
 <img src="<?php echo get_template_directory_uri();?>/../../uploads/Banner1202.jpg" alt="wavy">
@@ -54,7 +54,7 @@ Would you like to search again with different keywords?</p>
 </span>
 <?php get_search_form(); ?>
 <?php endif; ?>
-
+</main>
 
 <?php get_sidebar();?>
 
