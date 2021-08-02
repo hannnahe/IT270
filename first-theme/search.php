@@ -2,9 +2,10 @@
 get_header();
 ?>
 <div class="wrapper">
+<div id="search-error"></div>
 <main>
 <?php if(have_posts()) : ?>
-    <div id="search-error">
+   
 <img src="<?php echo get_template_directory_uri();?>/../../uploads/Banner1202.jpg" alt="wavy">
 </div>
 <h1 class="page-title">
